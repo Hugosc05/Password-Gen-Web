@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;   
+}
+
+body {
+    background: #002339;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 58px;
+    font-weight: 400;
+    padding-bottom:50px ;
+    display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  font-family: "Luckiest Guy", cursive;  
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+
+.password-display {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.password-display input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.copy-button {
+    margin-top: 10px;
+    background: linear-gradient(purple);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 8em;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 0.534), 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+  font-family: "Poppins", sans-serif;
+}
+h1 span {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  display: inline-block;
+}
+h1 span:first-child {
+  -webkit-animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+          animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+h1 span:last-child {
+  -webkit-animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+          animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+
+.light h1 {
+  color: white; /* Color de texto blanco */
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 0.534), 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black; /* Sombra de texto negra */
+}
+
+/* Modo Oscuro */
+.dark h1 {
+  color: black; /* Color de texto negro */
+  text-shadow: 0 0.1em 30px rgba(255, 255, 255, 0.534), 0.05em -0.03em 0 white, 0.05em 0.005em 0 white, 0em 0.08em 0 white, 0.05em 0.08em 0 white, 0px -0.03em 0 white, -0.03em -0.03em 0 white, -0.03em 0.08em 0 white, -0.03em 0 0 white; /* Sombra de texto blanca */
+  -webkit-text-stroke-width: 0.00000000001px; /* Ancho del color del texto */
+    -webkit-text-stroke-color: white; /* Color del contorno del texto */
+}
+
+@-webkit-keyframes bop {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bop {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes bopB {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  80%,
+  100% {
+    -webkit-transform: scale(1) rotateZ(-3deg);
+            transform: scale(1) rotateZ(-3deg);
+  }
+}
+@keyframes bopB {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  80%,
+  100% {
+    -webkit-transform: scale(1) rotateZ(-3deg);
+            transform: scale(1) rotateZ(-3deg);
+  }
+}
+
+.top-right {
+    position: absolute;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el switch */
+.switch {
+    margin-right: 10px; /* Espacio entre el switch y los iconos de redes sociales */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+
+/* Modo Claro */
+body.light {
+  background: #fff; /* Color de fondo claro */
+  color: #000; /* Color de texto claro */
+}
+
+/* Modo Oscuro */
+body.dark {
+  background: #333; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto oscuro */
+}
+
+/* Color de fondo */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #09486e; /* Cambiar el color de fondo */
+}
+
+.Slider{
+  background:linear-gradient(purple, blue);
+}
+
+.password-display input {
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  margin-top: 50px;
+  transition: all 0.5s ease; /* Agregar transición para cambios en las letras */
+}
+
+.password-display input:focus {
+  border-color: transparent; /* Evitar que aparezca el borde al enfocar el input */
+}
+
+.footer {
+  margin-bottom:35px ;
+  width: 100%;
+  background-color: #dddddd00; /* Color de fondo grisáceo */
+  text-align: center;
+  padding: 10px; /* Ajusta el espaciado interior */
+  font-size: 14px; /* Tamaño de fuente */
+  position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+  bottom: 0; /* Coloca el footer en la parte inferior */
+  align-items: center;
+  right: 0px;
+}
+
+.footer .copyright {
+  margin: 0; /* Elimina el margen para ajustarse al borde del footer */
+}
+
+.light footer {
+  color: white; /* Color de texto blanco */
+}
+
+.dark footer {
+  color: black; /* Color de texto negro */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo casi transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  z-index: 1000; /* Asegura que esté en la parte superior */
+}
+
+.icons-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.icons-top-left a {
+  margin-right: 10px; /* Ajusta el espacio entre los íconos */
+  color: white; /* Color de los íconos */
+  font-size: 35px; /* Tamaño de los íconos */
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
